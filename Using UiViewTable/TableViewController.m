@@ -56,6 +56,20 @@
     return cell;
 }
 
+// YASH : this is why only label was showing, you made the cell of height 118 but did not specify it to the table view
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 118;
+}
+
+// YASH : method to perform stuff when cell clicked (should generally end with deselect method)
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 /*
 // Override to support conditional editing of the table view.
