@@ -50,8 +50,8 @@
        
     }
     
-    cell.myLabel.text = @"Label %d",indexPath.row;
-    cell.textArea.text = @"Random text %d",indexPath.row;
+    cell.myLabel.text = [NSString stringWithFormat:@"label %li",indexPath.row+1];
+    cell.textArea.text = [NSString stringWithFormat:@"random Text %li",indexPath.row+1];
     return cell;
 }
 
