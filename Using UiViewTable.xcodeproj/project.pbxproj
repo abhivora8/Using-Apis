@@ -12,7 +12,8 @@
 		D68752521D04289C00C39020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68752501D04289C00C39020 /* Main.storyboard */; };
 		D68752541D04289C00C39020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68752531D04289C00C39020 /* Assets.xcassets */; };
 		D68752601D042D6800C39020 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D687525F1D042D6800C39020 /* TableViewController.m */; };
-		D68752621D05202E00C39020 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68752611D05202E00C39020 /* View.xib */; };
+		D68752691D0592D900C39020 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68752681D0592D900C39020 /* CustomCell.xib */; };
+		D687526F1D0593B900C39020 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D687526E1D0593B900C39020 /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,9 @@
 		D68752581D04289C00C39020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D687525E1D042D6800C39020 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D687525F1D042D6800C39020 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		D68752611D05202E00C39020 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		D68752681D0592D900C39020 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		D687526D1D0593B900C39020 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
+		D687526E1D0593B900C39020 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +63,12 @@
 			children = (
 				D687524A1D04289C00C39020 /* AppDelegate.h */,
 				D687524B1D04289C00C39020 /* AppDelegate.m */,
-				D68752501D04289C00C39020 /* Main.storyboard */,
-				D68752611D05202E00C39020 /* View.xib */,
 				D687525E1D042D6800C39020 /* TableViewController.h */,
 				D687525F1D042D6800C39020 /* TableViewController.m */,
+				D68752501D04289C00C39020 /* Main.storyboard */,
+				D68752681D0592D900C39020 /* CustomCell.xib */,
+				D687526D1D0593B900C39020 /* CustomCell.h */,
+				D687526E1D0593B900C39020 /* CustomCell.m */,
 				D68752531D04289C00C39020 /* Assets.xcassets */,
 				D68752581D04289C00C39020 /* Info.plist */,
 				D68752471D04289C00C39020 /* Supporting Files */,
@@ -136,7 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68752621D05202E00C39020 /* View.xib in Resources */,
+				D68752691D0592D900C39020 /* CustomCell.xib in Resources */,
 				D68752541D04289C00C39020 /* Assets.xcassets in Resources */,
 				D68752521D04289C00C39020 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +156,7 @@
 			files = (
 				D687524C1D04289C00C39020 /* AppDelegate.m in Sources */,
 				D68752601D042D6800C39020 /* TableViewController.m in Sources */,
+				D687526F1D0593B900C39020 /* CustomCell.m in Sources */,
 				D68752491D04289C00C39020 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

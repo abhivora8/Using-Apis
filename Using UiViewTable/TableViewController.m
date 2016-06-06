@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "CustomCell.h"
 
 @interface TableViewController ()
 
@@ -32,22 +33,25 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 3;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 1;
+    return 5;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
+    if (!cell) {
+        [tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"myCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
+       
+    }
     
+    cell.myLabel.text = @"Label %d",indexPath.row;
+    cell.textArea.text = @"Random text %d",indexPath.row;
     return cell;
 }
 
