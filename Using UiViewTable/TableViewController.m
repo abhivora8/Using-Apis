@@ -41,6 +41,27 @@
 }
 
 
+-(void)pushButtonClicked:(id)sender
+{
+    UIAlertController * alert=   [UIAlertController alertControllerWithTitle:@"Title" message:@"Congrats! Button pressed." preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* okPressed = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action)
+    {
+        NSLog(@"Button Pressed");
+    }];
+    [alert addAction:okPressed];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+
+//-(void)pushButtonClicked:(id)sender
+//{
+//    UIAlertController *Alert = [[UIAlertController alloc] title:@"buttonpressed" message:@"Congratulations!!! Button pressed"];
+//    [Alert show];
+//}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
@@ -53,7 +74,10 @@
     cell.myLabel.text = [NSString stringWithFormat:@"label %li",indexPath.row+1];
     cell.textArea.text = [NSString stringWithFormat:@"random Text %li",indexPath.row+1];
     cell.myLogo.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",indexPath.row+1]];
+    [cell.myButton addTarget:self action:@selector(myButton) forControlEvents:UIControlEventTouchUpInside];
     //Havent added image yet........
+    
+ 
     return cell;
 }
 
