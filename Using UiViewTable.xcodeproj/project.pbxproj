@@ -14,6 +14,10 @@
 		D68752601D042D6800C39020 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D687525F1D042D6800C39020 /* TableViewController.m */; };
 		D68752691D0592D900C39020 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68752681D0592D900C39020 /* CustomCell.xib */; };
 		D687526F1D0593B900C39020 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D687526E1D0593B900C39020 /* CustomCell.m */; };
+		D69FE6171D08714D00C1B885 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D69FE6161D08714D00C1B885 /* 1.png */; };
+		D69FE6191D08716B00C1B885 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D69FE6181D08716B00C1B885 /* 2.png */; };
+		D69FE61B1D08717D00C1B885 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D69FE61A1D08717D00C1B885 /* 3.png */; };
+		D69FE61D1D08719600C1B885 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D69FE61C1D08719600C1B885 /* 4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		D68752681D0592D900C39020 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		D687526D1D0593B900C39020 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
 		D687526E1D0593B900C39020 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
+		D69FE6161D08714D00C1B885 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D69FE6181D08716B00C1B885 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D69FE61A1D08717D00C1B885 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D69FE61C1D08719600C1B885 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,10 @@
 		D687523B1D04289C00C39020 = {
 			isa = PBXGroup;
 			children = (
+				D69FE6161D08714D00C1B885 /* 1.png */,
+				D69FE6181D08716B00C1B885 /* 2.png */,
+				D69FE61A1D08717D00C1B885 /* 3.png */,
+				D69FE61C1D08719600C1B885 /* 4.png */,
 				D68752461D04289C00C39020 /* Using UiViewTable */,
 				D68752451D04289C00C39020 /* Products */,
 			);
@@ -141,9 +153,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69FE61D1D08719600C1B885 /* 4.png in Resources */,
 				D68752691D0592D900C39020 /* CustomCell.xib in Resources */,
+				D69FE6191D08716B00C1B885 /* 2.png in Resources */,
 				D68752541D04289C00C39020 /* Assets.xcassets in Resources */,
 				D68752521D04289C00C39020 /* Main.storyboard in Resources */,
+				D69FE61B1D08717D00C1B885 /* 3.png in Resources */,
+				D69FE6171D08714D00C1B885 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

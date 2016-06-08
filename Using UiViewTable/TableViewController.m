@@ -37,7 +37,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 4;
 }
 
 
@@ -52,6 +52,7 @@
     
     cell.myLabel.text = [NSString stringWithFormat:@"label %li",indexPath.row+1];
     cell.textArea.text = [NSString stringWithFormat:@"random Text %li",indexPath.row+1];
+    cell.myLogo.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",indexPath.row+1]];
     //Havent added image yet........
     return cell;
 }
