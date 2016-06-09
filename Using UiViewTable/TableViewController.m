@@ -74,7 +74,9 @@
     cell.myLabel.text = [NSString stringWithFormat:@"label %li",indexPath.row+1];
     cell.textArea.text = [NSString stringWithFormat:@"random Text %li",indexPath.row+1];
     cell.myLogo.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",indexPath.row+1]];
-    [cell.myButton addTarget:self action:@selector(myButton) forControlEvents:UIControlEventTouchUpInside];
+    
+    // here, you had @selector(myButton). But selector is always the method that will be called when  button touch happens i.e. pushButtonClicked
+    [cell.myButton addTarget:self action:@selector(pushButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     //Havent added image yet........
     
  

@@ -10,12 +10,12 @@
 
 @interface CustomCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *myLogo;
+@property (strong, nonatomic) IBOutlet UIImageView *myLogo;
 
-@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (strong, nonatomic) IBOutlet UILabel *myLabel;
 
-@property (weak, nonatomic) IBOutlet UITextView *textArea;
+@property (strong, nonatomic) IBOutlet UITextView *textArea;
 
-@property (weak, nonatomic) IBOutlet UIButton *myButton;
+@property (strong, nonatomic) IBOutlet UIButton *myButton;
 
 @end
