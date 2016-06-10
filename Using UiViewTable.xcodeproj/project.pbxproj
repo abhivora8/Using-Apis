@@ -53,10 +53,7 @@
 		D687523B1D04289C00C39020 = {
 			isa = PBXGroup;
 			children = (
-				D69FE6161D08714D00C1B885 /* 1.png */,
-				D69FE6181D08716B00C1B885 /* 2.png */,
-				D69FE61A1D08717D00C1B885 /* 3.png */,
-				D69FE61C1D08719600C1B885 /* 4.png */,
+				D6AEBB9C1D09BBCD0008C99D /* images */,
 				D68752461D04289C00C39020 /* Using UiViewTable */,
 				D68752451D04289C00C39020 /* Products */,
 			);
@@ -94,6 +91,17 @@
 				D68752481D04289C00C39020 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6AEBB9C1D09BBCD0008C99D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D69FE6161D08714D00C1B885 /* 1.png */,
+				D69FE6181D08716B00C1B885 /* 2.png */,
+				D69FE61A1D08717D00C1B885 /* 3.png */,
+				D69FE61C1D08719600C1B885 /* 4.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

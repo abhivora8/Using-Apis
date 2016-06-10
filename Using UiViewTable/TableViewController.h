@@ -10,4 +10,10 @@
 
 @interface TableViewController : UITableViewController
 
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *year;
+@property (strong, nonatomic) NSString *actors;
+@property (strong, nonatomic) NSString *genre;
+
+
 @end

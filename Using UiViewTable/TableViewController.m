@@ -9,9 +9,6 @@
 #import "TableViewController.h"
 #import "CustomCell.h"
 
-@interface TableViewController ()
-
-@end
 
 @implementation TableViewController
 
@@ -23,6 +20,29 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSURL *Url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.omdbapi.com/?t=the+last+witch++hunter&y=&plot=short&r=json"]];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        @try {
+            NSData *data = [NSData dataWithContentsOfURL:Url];
+            NSError *error;
+            
+            if (data!=nil)
+            {
+                id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                NSLog(@"Data: %@", jsonData);
+            }
+        }
+        @catch (NSException *exception) {
+            
+        }
+        @finally {
+            
+        }
+    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,13 +75,6 @@
 }
 
 
-//-(void)pushButtonClicked:(id)sender
-//{
-//    UIAlertController *Alert = [[UIAlertController alloc] title:@"buttonpressed" message:@"Congratulations!!! Button pressed"];
-//    [Alert show];
-//}
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
@@ -77,7 +90,7 @@
     
     // here, you had @selector(myButton). But selector is always the method that will be called when  button touch happens i.e. pushButtonClicked
     [cell.myButton addTarget:self action:@selector(pushButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    //Havent added image yet........
+    
     
  
     return cell;
@@ -96,6 +109,8 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+
 
 
 /*
