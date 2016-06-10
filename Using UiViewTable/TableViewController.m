@@ -20,10 +20,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
     NSURL *Url = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.omdbapi.com/?t=the+last+witch++hunter&y=&plot=short&r=json"]];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         @try {
