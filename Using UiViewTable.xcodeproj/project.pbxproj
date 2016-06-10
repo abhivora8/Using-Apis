@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1865DF381D0B5D5F00E036DA /* jsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865DF371D0B5D5F00E036DA /* jsonModel.m */; };
 		D68752491D04289C00C39020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68752481D04289C00C39020 /* main.m */; };
 		D687524C1D04289C00C39020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D687524B1D04289C00C39020 /* AppDelegate.m */; };
 		D68752521D04289C00C39020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68752501D04289C00C39020 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1865DF361D0B5D5F00E036DA /* jsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonModel.h; sourceTree = "<group>"; };
+		1865DF371D0B5D5F00E036DA /* jsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonModel.m; sourceTree = "<group>"; };
 		D68752441D04289C00C39020 /* Using UiViewTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Using UiViewTable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68752481D04289C00C39020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D687524A1D04289C00C39020 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 		D68752461D04289C00C39020 /* Using UiViewTable */ = {
 			isa = PBXGroup;
 			children = (
+				1865DF361D0B5D5F00E036DA /* jsonModel.h */,
+				1865DF371D0B5D5F00E036DA /* jsonModel.m */,
 				D687524A1D04289C00C39020 /* AppDelegate.h */,
 				D687524B1D04289C00C39020 /* AppDelegate.m */,
 				D687525E1D042D6800C39020 /* TableViewController.h */,
@@ -180,6 +185,7 @@
 			files = (
 				D687524C1D04289C00C39020 /* AppDelegate.m in Sources */,
 				D68752601D042D6800C39020 /* TableViewController.m in Sources */,
+				1865DF381D0B5D5F00E036DA /* jsonModel.m in Sources */,
 				D687526F1D0593B900C39020 /* CustomCell.m in Sources */,
 				D68752491D04289C00C39020 /* main.m in Sources */,
 			);

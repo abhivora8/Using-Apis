@@ -8,6 +8,14 @@
 
 #import "TableViewController.h"
 #import "CustomCell.h"
+#import "jsonModel.h"
+
+@interface TableViewController ()
+{
+    jsonModel *model;
+}
+
+@end
 
 
 @implementation TableViewController
@@ -29,7 +37,10 @@
             if (data!=nil)
             {
                 id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-                NSLog(@"Data: %@", jsonData);
+                // change jsonData into model type
+                model = [[jsonModel alloc] initWithDict:jsonData];
+                NSLog(@"TITLE : %@", model.Title);
+                [self.tableView reloadData];
             }
         }
         @catch (NSException *exception) {
