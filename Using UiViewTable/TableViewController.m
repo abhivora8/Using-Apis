@@ -40,7 +40,9 @@
                 // change jsonData into model type
                 model = [[jsonModel alloc] initWithDict:jsonData];
                 NSLog(@"TITLE : %@", model.Title);
-                [self.tableView reloadData];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.tableView reloadData];
+                });
             }
         }
         @catch (NSException *exception) {
@@ -90,11 +92,18 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
        
     }
-    
-    cell.myLabel.text = [NSString stringWithFormat:@"label %li",indexPath.row+1];
-    cell.textArea.text = [NSString stringWithFormat:@"random Text %li",indexPath.row+1];
-    cell.myLogo.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",indexPath.row+1]];
-    
+    if(model!=nil)
+    {
+        cell.myLabel.text = [NSString stringWithFormat:@"%@",model.Title];
+        cell.textArea.text = [NSString stringWithFormat:@"%@",model.plot];
+        cell.myLogo.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",indexPath.row+1]];
+    }
+    else
+    {
+        cell.myLabel.text = [NSString stringWithFormat:@"Title %li",indexPath.row+1];
+        cell.textArea.text = [NSString stringWithFormat:@"Plot %li",indexPath.row+1];
+        cell.myLogo.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",indexPath.row+1]];
+    }
     // here, you had @selector(myButton). But selector is always the method that will be called when  button touch happens i.e. pushButtonClicked
     [cell.myButton addTarget:self action:@selector(pushButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
